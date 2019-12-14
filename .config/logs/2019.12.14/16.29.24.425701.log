@@ -1,0 +1,6 @@
+2019-12-14 16:29:24,436 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2019-12-14 16:29:24,445 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'list']
+2019-12-14 16:29:24,458 DEBUG    root            Running [gcloud.config.list] with arguments: [--format: "value(compute.zone)", --quiet: "True"]
+2019-12-14 16:29:24,490 INFO     root            Display format: "config value(compute.zone)"
+2019-12-14 16:29:24,490 INFO     ___FILE_ONLY___ 
+

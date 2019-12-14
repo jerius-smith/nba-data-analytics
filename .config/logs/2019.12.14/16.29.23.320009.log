@@ -1,0 +1,9 @@
+2019-12-14 16:29:23,393 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2019-12-14 16:29:23,417 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'list']
+2019-12-14 16:29:23,425 DEBUG    root            Running [gcloud.config.list] with arguments: [--format: "value(core.project)", --quiet: "True"]
+2019-12-14 16:29:23,553 INFO     root            Display format: "config value(core.project)"
+2019-12-14 16:29:23,554 INFO     ___FILE_ONLY___ nba-data-analytics
+
+2019-12-14 16:29:23,562 DEBUG    root            Checking for updates...
+2019-12-14 16:29:23,792 DEBUG    root            Updating notification cache...
+2019-12-14 16:29:23,792 DEBUG    root            Activating notification: [default]

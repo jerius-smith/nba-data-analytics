@@ -1,0 +1,35 @@
+2019-12-14 16:29:25,392 DEBUG    root            Loaded Command Group: [u'gcloud', u'projects']
+2019-12-14 16:29:25,398 DEBUG    root            Loaded Command Group: [u'gcloud', u'projects', u'describe']
+2019-12-14 16:29:25,403 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--format: "value(projectNumber)", PROJECT_ID: "nba-data-analytics"]
+2019-12-14 16:29:25,641 DEBUG    root            (gcloud.projects.describe) User [616175172519-compute@developer.gserviceaccount.com] does not have permission to access project [nba-data-analytics] (or it may not exist): Cloud Resource Manager API has not been used in project 616175172519 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519
+Traceback (most recent call last):
+  File "/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 985, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/tools/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 795, in Run
+    resources = command_instance.Run(args)
+  File "/tools/google-cloud-sdk/lib/surface/projects/describe.py", line 51, in Run
+    return projects_api.Get(project_ref)
+  File "/tools/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 69, in Get
+    projectId=project_ref.projectId))
+  File "/tools/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 862, in Get
+    config, request, global_params=global_params)
+  File "/tools/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 729, in _RunMethod
+    http, http_request, **opts)
+  File "/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 356, in MakeRequest
+    max_retry_wait, total_wait_sec))
+  File "/tools/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 304, in HandleExceptionsAndRebuildHttpConnections
+    raise retry_args.exc
+HttpException: User [616175172519-compute@developer.gserviceaccount.com] does not have permission to access project [nba-data-analytics] (or it may not exist): Cloud Resource Manager API has not been used in project 616175172519 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519
+2019-12-14 16:29:25,772 ERROR    root            (gcloud.projects.describe) User [616175172519-compute@developer.gserviceaccount.com] does not have permission to access project [nba-data-analytics] (or it may not exist): Cloud Resource Manager API has not been used in project 616175172519 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=616175172519

@@ -1,0 +1,9 @@
+2019-12-14 16:48:33,672 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2019-12-14 16:48:33,675 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'list']
+2019-12-14 16:48:33,679 DEBUG    root            Running [gcloud.auth.list] with arguments: [--filter: "status:ACTIVE", --format: "value(account)"]
+2019-12-14 16:48:33,693 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    ) value(account)"
+2019-12-14 16:48:33,693 INFO     ___FILE_ONLY___ 616175172519-compute@developer.gserviceaccount.com
+
